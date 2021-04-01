@@ -47,6 +47,7 @@ const reducer = (state, action) => {
       }
     );
 
+    // always return money with 2 decimal places
     total = (Math.round(total * 100) / 100).toFixed(2);
 
     return { ...state, total, amount };
