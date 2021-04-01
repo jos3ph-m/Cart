@@ -29,7 +29,6 @@ const reducer = (state, action) => {
     });
     return { ...state, cart: tempCart };
   }
-  return state;
 };
 
 export default reducer;
