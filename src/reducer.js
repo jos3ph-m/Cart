@@ -52,6 +52,9 @@ const reducer = (state, action) => {
 
     return { ...state, total, amount };
   }
+  if (action.type === 'LOADING') {
+    return { ...state, loading: true };
+  }
   return state;
 };
 
