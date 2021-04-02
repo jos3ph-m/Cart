@@ -58,6 +58,10 @@ const reducer = (state, action) => {
   if (action.type === 'DISPLAY_ITEMS') {
     return { ...state, cart: action.payload, loading: false };
   }
+  if ((action.type = 'TOGGLE_AMOUNT')) {
+    let tempCart = [];
+    return { ...state, cart: tempCart };
+  }
   return state;
 };
 
