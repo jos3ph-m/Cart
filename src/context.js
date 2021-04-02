@@ -31,7 +31,7 @@ const AppProvider = ({ children }) => {
     dispatch({ type: 'DECREASE', payload: id });
   };
 
-  const fetchData = () => {
+  const fetchData = async () => {
     dispatch({ type: 'LOADING' });
   };
 
