@@ -31,7 +31,9 @@ const AppProvider = ({ children }) => {
     dispatch({ type: 'DECREASE', payload: id });
   };
 
-  const fetchData = () => {};
+  const fetchData = () => {
+    dispatch({ type: 'LOADING' });
+  };
 
   useEffect(() => {
     dispatch({ type: 'GET_TOTALS' });
